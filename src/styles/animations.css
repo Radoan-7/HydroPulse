@@ -1,0 +1,285 @@
+/* Water stream animations */
+.water-stream {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 50px;
+  background: linear-gradient(to bottom, 
+    rgba(16, 185, 129, 0.9) 0%,
+    rgba(52, 211, 153, 0.7) 50%,
+    rgba(110, 231, 183, 0.5) 100%
+  );
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+  animation: waterFlow 0.5s ease-in-out infinite alternate;
+}
+
+.water-stream-waste {
+  background: linear-gradient(to bottom, 
+    rgba(239, 68, 68, 0.9) 0%,
+    rgba(248, 113, 113, 0.7) 50%,
+    rgba(252, 165, 165, 0.5) 100%
+  );
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.6);
+  animation: waterFlowWaste 0.3s ease-in-out infinite;
+}
+
+.water-stream-controlled {
+  background: linear-gradient(to bottom, 
+    rgba(16, 185, 129, 0.9) 0%,
+    rgba(52, 211, 153, 0.7) 50%,
+    rgba(110, 231, 183, 0.5) 100%
+  );
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
+  animation: waterFlowControlled 1s ease-in-out infinite;
+}
+
+@keyframes waterFlow {
+  0% { height: 50px; opacity: 0.9; transform: translateX(-50%) scaleX(1); }
+  100% { height: 60px; opacity: 0.7; transform: translateX(-50%) scaleX(1.1); }
+}
+
+@keyframes waterFlowWaste {
+  0% { 
+    height: 50px; 
+    opacity: 0.9; 
+    transform: translateX(-50%) scaleX(1);
+  }
+  50% { 
+    height: 80px; 
+    opacity: 0.7; 
+    transform: translateX(-50%) scaleX(1.3);
+  }
+  100% { 
+    height: 50px; 
+    opacity: 0.9; 
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+@keyframes waterFlowControlled {
+  0% { 
+    height: 40px; 
+    opacity: 0.8; 
+    transform: translateX(-50%);
+  }
+  100% { 
+    height: 45px; 
+    opacity: 0.9; 
+    transform: translateX(-50%);
+  }
+}
+
+/* Enhanced glow effects */
+.glow-green {
+  box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+}
+
+.glow-red {
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.4);
+}
+
+.glow-green-hover:hover {
+  box-shadow: 
+    0 0 40px rgba(16, 185, 129, 0.5),
+    0 0 80px rgba(16, 185, 129, 0.3);
+}
+
+/* Enhanced pulse animations */
+@keyframes pulse-green {
+  0%, 100% { 
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.4);
+  }
+  50% { 
+    box-shadow: 0 0 60px rgba(16, 185, 129, 0.6);
+  }
+}
+
+@keyframes pulse-red {
+  0%, 100% { 
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.4);
+  }
+  50% { 
+    box-shadow: 0 0 60px rgba(239, 68, 68, 0.6);
+  }
+}
+
+/* New pulse variations */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.02); }
+}
+
+@keyframes pulse-fast {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.3);
+    border-color: rgba(16, 185, 129, 0.4);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(16, 185, 129, 0.5);
+    border-color: rgba(16, 185, 129, 0.6);
+  }
+}
+
+@keyframes pulse-warning {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+    transform: scale(1);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(239, 68, 68, 0.5);
+    transform: scale(1.02);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Animation classes */
+.animate-pulse-slow {
+  animation: pulse-slow 3s ease-in-out infinite;
+}
+
+.animate-pulse-fast {
+  animation: pulse-fast 1s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-pulse-warning {
+  animation: pulse-warning 0.8s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s ease-in-out infinite;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 1s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Background wave animation */
+@keyframes wave {
+  0% { transform: translateX(0) translateY(0) scaleY(1); }
+  50% { transform: translateX(-25%) translateY(-8px) scaleY(0.8); }
+  100% { transform: translateX(-50%) translateY(0) scaleY(1); }
+}
+
+.wave-animation {
+  animation: wave 12s ease-in-out infinite;
+}
+
+/* Progress bar animations */
+@keyframes progress-fill {
+  0% { width: 0%; }
+  100% { width: var(--progress-width); }
+}
+
+.progress-animated {
+  animation: progress-fill 1.5s ease-out;
+}
+
+/* Button hover effects */
+.btn-hover:hover {
+  transform: scale(1.08) translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Backdrop blur enhancement */
+.backdrop-blur-custom {
+  backdrop-filter: blur(16px) saturate(1.8);
+}
+
+/* Enhanced gradient text animation */
+@keyframes gradient-shift {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+@keyframes animate-gradient {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(-45deg, #10b981, #22c55e, #34d399, #6ee7b7);
+  background-size: 400% 400%;
+  animation: gradient-shift 5s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #10b981, #22c55e, #34d399, #6ee7b7);
+  background-size: 400% 400%;
+  animation: animate-gradient 6s ease infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Particle effects */
+@keyframes particle-float {
+  0% { 
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% { 
+    transform: translateY(-120px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.particle {
+  animation: particle-float 8s linear infinite;
+}
+
+/* Enhanced drop shadow utilities */
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.5));
+}
+
+.drop-shadow-glow-red {
+  filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.5));
+}
