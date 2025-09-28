@@ -5,15 +5,11 @@
 
 ## ✨ Overview
 
-💧 HydroPulse is a smart water-saving solution designed to tackle unconscious water wastage.
-Through psychological nudges, real-time simulations, and intuitive green-themed UI, HydroPulse transforms ordinary taps into awareness-driven experiences.
-
-Instead of just limiting water, HydroPulse influences behavior — making people more mindful of their daily usage in public spaces and beyond.
+💧 HydroPulse is a smart water-saving solution designed to tackle unconscious water wastage. Through psychological nudges, real-time simulations, and intuitive green-themed UI, HydroPulse transforms ordinary taps into awareness-driven experiences. Instead of just limiting water, HydroPulse influences behavior, making people more mindful of their daily usage in public spaces and beyond.
 
 ## 🧪 Hypothesis
 
-People waste water because they don’t see the impact in real-time.
-If taps display wasted water, people will immediately change their behavior.
+People waste water because they don’t see the impact in real-time. If taps display wasted water, people will immediately change their behavior.
 
 ## 🔬 Test Method
 
@@ -32,22 +28,22 @@ If taps display wasted water, people will immediately change their behavior.
 
 ## ✅ What Worked
 
-✔️ The counter clearly shows waste
-✔️ Users react quickly when presented with visible numbers
+- The counter clearly shows waste
+- Users react quickly when presented with visible numbers
 
 ## ⚠️ What Didn’t
 
-❌ Currently only a simulation
-❌ Needs real IoT/hardware integration to fully validate
+- Currently only a simulation
+- Needs real IoT/hardware integration to fully validate
 
 ## 🚀 Features
 
-✔️ Live Simulation – Interactive visual flow showing water usage in real time
-✔️ Behavioral Nudges – Subtle, psychology-driven feedback that encourages conservation
-✔️ Gamified Counters – Tracks drops saved without overwhelming the user
-✔️ Outcome Dashboard – Displays how small changes scale to big environmental impacts
-✔️ Serverless Backend – Smooth, lightweight, and scalable without deployment hassles
-✔️ Stunning UI/UX – 🌿 Green-themed, animated, and modern design for maximum engagement
+- Live Simulation – Interactive visual flow showing water usage in real time
+- Behavioral Nudges – Subtle, psychology-driven feedback that encourages conservation
+- Gamified Counters – Tracks drops saved without overwhelming the user
+- Outcome Dashboard – Displays how small changes scale to big environmental impacts
+- Serverless Backend – Smooth, lightweight, and scalable without deployment hassles
+- Stunning UI/UX – 🌿 Green-themed, animated, and modern design for maximum engagement
 
 ## 🧠 Why It Matters
 
@@ -60,7 +56,7 @@ it changes habits by:
 
 - Showing the psychological ripple effect of conservation
 
-⚡ Small behavior shifts → Massive environmental change.
+- ⚡ Small behavior shifts → Massive environmental change.
 
 ## 🎥 Demo
 
