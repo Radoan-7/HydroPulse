@@ -65,5 +65,6 @@ it changes habits by:
 ## 🎥 Demo
 
 Run this on local host by:
-npm install
-npm run dev
+- npm install
+  
+- npm run dev
